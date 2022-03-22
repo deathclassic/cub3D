@@ -125,10 +125,10 @@ typedef struct s_info
 
 typedef struct s_data
 {
-	t_draw		*p_draw;
-	t_coord		*p_coord;
-	t_addres	*p_addres;
-	t_info		*p_info;
+	t_draw		p_draw;
+	t_coord		p_coord;
+	t_addres	p_addres;
+	t_info		p_info;
 }	t_data;
 
 /* parser */

@@ -1,5 +1,5 @@
 SRCS	=	main.c get_next_line.c \
-			parser.c parse_map.c parse_before_map.c parser_utils.c\
+			parser.c parse_map.c parser_utils.c\
 			minimap.c draw_3d.c draw.c move.c textures.c textures2.c\
 			ft_parser.c config_handler.c error_handler.c utils2.c\
             list_handler.c map_handler.c utils.c utils_add.c utils3.c\

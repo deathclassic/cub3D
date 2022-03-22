@@ -50,8 +50,8 @@ int	ft_parser(char **argv, t_config *config, t_data *data)
 	init_draw(data);
 	config->map2 = start_parsing(argv[1], config);
 	ft_copy(data, config);
-	if (ft_check_map_char(data)|| ft_check_map_border(data) || data->p_info->direction == '\0'
-		|| data->p_coord->y == -1 || data->p_coord->x == -1)
+	if (ft_check_map_char(data)|| ft_check_map_border(data) || data->p_info.direction == '\0'
+		|| data->p_coord.y == -1 || data->p_coord.x == -1)
 		error_handler(4);
 	return (0);
 }

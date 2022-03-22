@@ -22,34 +22,15 @@ void	free_error(t_config *config, t_data *data)
 
 void	ft_copy(t_data *data, t_config *config)
 {
-	free(data->p_draw->path_n);
-	free(data->p_draw->path_s);
-	free(data->p_draw->path_w);
-	free(data->p_draw->path_e);
-	free_all2(data->p_info->arr);
-	data->p_draw->path_n = config->north;
-	data->p_draw->path_s = config->south;
-	data->p_draw->path_w = config->west;
-	data->p_draw->path_e = config->east;
-	data->p_draw->f_color = config->floor;
-	data->p_draw->c_color = config->ceiling;
-	data->p_info->arr = config->map2;
-	data->p_info->width = config->width;
-	data->p_info->height = config->height;
-}
-
-static int	init_struct(t_data *data)
-{
-	data->p_draw = malloc(sizeof(t_draw));
-	data->p_coord = malloc(sizeof(t_coord));
-	data->p_addres = malloc(sizeof(t_addres));
-	data->p_info = malloc(sizeof(t_info));
-	if (!data->p_draw || !data->p_addres || !data->p_coord)
-	{
-		ft_putendl_fd("Error malloc", 1);
-		return (1);
-	}
-	return (0);
+	data->p_draw.path_n = config->north;
+	data->p_draw.path_s = config->south;
+	data->p_draw.path_w = config->west;
+	data->p_draw.path_e = config->east;
+	data->p_draw.f_color = config->floor;
+	data->p_draw.c_color = config->ceiling;
+	data->p_info.arr = config->map2;
+	data->p_info.width = config->width;
+	data->p_info.height = config->height;
 }
 
 int	main(int argc, char **argv)
@@ -61,8 +42,6 @@ int	main(int argc, char **argv)
 		error_handler(0);
 	else
 	{
-		if (init_struct(&data))
-			return (1);
 		if (ft_parser(argv, &config, &data))
 			free_error(&config, &data);
 		ft_draw_general(&data);

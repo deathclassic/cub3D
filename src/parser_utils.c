@@ -17,26 +17,22 @@ void	free_all(t_data *data)
 	int	i;
 
 	i = 0;
-	while (i < data->p_info->height)
+	while (i < data->p_info.height)
 	{
-		if (data->p_info->arr[i])
-			free(data->p_info->arr[i]);
+		if (data->p_info.arr[i])
+			free(data->p_info.arr[i]);
 		i++;
 	}
-	if (data->p_info->arr)
-		free(data->p_info->arr);
-	if (data->p_draw->path_e)
-		free(data->p_draw->path_e);
-	if (data->p_draw->path_w)
-		free(data->p_draw->path_w);
-	if (data->p_draw->path_s)
-		free(data->p_draw->path_s);
-	if (data->p_draw->path_n)
-		free(data->p_draw->path_n);
-	free(data->p_draw);
-	free(data->p_info);
-	free(data->p_addres);
-	free(data->p_coord);
+	if (data->p_info.arr)
+		free(data->p_info.arr);
+	if (data->p_draw.path_e)
+		free(data->p_draw.path_e);
+	if (data->p_draw.path_w)
+		free(data->p_draw.path_w);
+	if (data->p_draw.path_s)
+		free(data->p_draw.path_s);
+	if (data->p_draw.path_n)
+		free(data->p_draw.path_n);
 }
 
 int	ft_check_cub(char **argv)
