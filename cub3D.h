@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cub3D.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cdelaine <cdelaine@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tcharmel <tcharmel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 16:06:18 by                   #+#    #+#             */
-/*   Updated: 2022/03/22 16:16:03 by cdelaine         ###   ########.fr       */
+/*   Updated: 2022/03/23 11:42:20 by tcharmel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@
 # define SCALE 8.0
 # define TEXTURES 4
 
-typedef struct s_config t_config;
+typedef struct s_config	t_config;
 
 typedef struct s_ptr
 {

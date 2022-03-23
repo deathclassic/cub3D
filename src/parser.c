@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   parser.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cdelaine <cdelaine@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tcharmel <tcharmel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 17:21:16 by                   #+#    #+#             */
-/*   Updated: 2022/03/22 16:17:07 by cdelaine         ###   ########.fr       */
+/*   Updated: 2022/03/23 11:41:54 by tcharmel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,4 +40,3 @@ void	init_draw(t_data *data)
 	data->p_draw.path_s = NULL;
 	data->p_info.flag = 0;
 }
-

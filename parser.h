@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   parser.h                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tcharmel <tcharmel@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/03/23 11:38:21 by tcharmel          #+#    #+#             */
+/*   Updated: 2022/03/23 11:39:11 by tcharmel         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef PARSER_H
 # define PARSER_H
 
@@ -9,9 +21,9 @@
 # include <stdio.h>
 # include "cub3D.h"
 
-typedef struct s_data t_data;
+typedef struct s_data	t_data;
 
-typedef	struct s_listt {
+typedef struct s_listt {
 	char			*str;
 	struct s_listt	*next;
 }	t_listt;

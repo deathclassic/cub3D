@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_parser.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cdelaine <cdelaine@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tcharmel <tcharmel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 14:58:38 by cdelaine          #+#    #+#             */
-/*   Updated: 2022/03/22 16:08:34 by cdelaine         ###   ########.fr       */
+/*   Updated: 2022/03/23 11:41:30 by tcharmel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,8 @@ int	ft_parser(char **argv, t_config *config, t_data *data)
 	init_draw(data);
 	config->map2 = start_parsing(argv[1], config);
 	ft_copy(data, config);
-	if (ft_check_map_char(data)|| ft_check_map_border(data) || data->p_info.direction == '\0'
+	if (ft_check_map_char(data) || ft_check_map_border(data)
+		|| data->p_info.direction == '\0'
 		|| data->p_coord.y == -1 || data->p_coord.x == -1)
 		error_handler(4);
 	return (0);
